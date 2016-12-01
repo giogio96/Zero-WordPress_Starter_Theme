@@ -100,6 +100,42 @@ $margin_range: 10; // margin class precision - if 10 margin class go like 10 20 
 // margin class generated is $margin_limit * $margin_range
 
 ```
+
+## Magic Stylesheet & JS for Template Page
+
+Zero provide for you a stylesheet-template-based and js-template-based system that associate specific stylesheet to the current page in order to increase your website performance and for keep your code clean.
+
+#### Standard Template
+```sh
+---- SCSS
+page.php -> page.scss
+archive.php -> archive.scss
+single.php -> single.scss
+
+---- JS
+page.php -> page.js
+archive.php -> archive.js
+single.php -> single.js
+```
+#### Custom Template
+```sh
+---- SCSS
+template.[template-name].php -> [template-name].scss
+
+---- JS
+template.[template-name].php -> [template-name].js
+```
+
+## Special SVG Class
+
+Zero use SvgToScss for provide special classes that help you to insert svg icon on your website. In order to do it you have only to set one of this 3 special classes:
+
+* .svg-[svg-filename] (the image is a background of this HTML container)
+* .svg-[svg-filename-before] (the image is a background of before element of HTML container)
+* .svg-[svg-filename]-after (the image is a background of after element of HTML container)
+
+** You have to upload your SVG Icon into the svg folder (/library/svg/)
+
 ## Cool Features
 
 Zero is "Progressive" Template Ready, you have to set up some parameters and it is ready to work into your smartphone such as an App.
