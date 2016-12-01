@@ -1,0 +1,78 @@
+button.button,
+input[type="submit"] {
+    
+    @extend .p10-20;
+    background-color: $l_blue;
+    font-size: 17px;
+    @extend .c_alt;
+    border: 0px;
+    cursor: pointer;
+    @include prefix(transition, all 0.3s ease-in-out);
+    &:hover {
+        
+        background-color: $white;
+        color: $l_blue;
+    }
+    &.alt {
+        
+        background-color: $white;
+        color: $l_blue;
+        @include prefix(transition, all 0.3s ease-in-out);
+        &:hover {
+        
+            background-color: $l_blue;
+            color: $white;
+        }
+    }
+    &.danger {
+        
+        background-color: $error;
+        color: $white;
+    }
+}
+
+button {
+    
+    background: transparent;
+    border: 0px;
+    box-shadow: none;
+    padding: 0px;
+    cursor: pointer;
+}
+
+hr {
+    
+    border: solid 3px $black;
+    &.alt { border: solid 3px $white; }
+    &.small { border-width: 1px; }
+}
+
+.label_selector { 
+            
+    padding: 5px;
+    cursor: pointer;
+    @include prefix(transition, all 0.3s ease-in-out);
+}
+input:checked + .label_selector, 
+.label_selector:hover {
+            
+    background-color: $l_blue;
+    a { color: $white; }
+}
+
+textarea {
+    
+    font-family: $f_family;
+}
+
+.loading i {
+    
+    @include prefix(transform-origin, center center);
+    @include prefix(animation, loading 1s infinite);
+}
+
+@include keyframes(loading) {
+    
+    from { @include prefix(transform, rotate(0deg)) }
+    to { @include prefix(transform, rotate(360deg)) }
+}

@@ -1,0 +1,69 @@
+/** COLORS PATTERN **/
+$white: #fff;
+$black: #2A2F31;
+$black2: #212121;
+$gray: #F6F6F6;
+$gray2: #EEEEEE;
+$gray3: #D8D8D8;
+
+$link: #4794F6;
+
+$error: red;
+$success: #52BD52;
+
+$text: $black;
+$text_alt: $white;
+
+$body: $gray;
+$header: $black;
+$footer: $header;
+$submenu: $gray;
+
+// COLOR WITH BG AND COLOR CLASS
+// See _global.scss for create the attrs
+
+$color_attr_1: #000000;
+$color_attr_2: #000001;
+
+/** GRID SYSTEM **/
+$grid-columns: 12; // Number of column (default is 12)
+$wrapper_width: 1000px 1200px; // Custom Wrapper width (.wrapper_1 is 800px .wrapper_2 is 1000px etc)
+
+
+/*
+ * d - The Class Name Es .d-12 (if is 'null' element have not a class element associated)
+ * desktop - @Media Query device name Es. @include device(desktop) { }
+ * 0 - Device Screen max-widht (if is 0 the @menia query haven't a max-width limit)
+ * 1024 - Device Screen min-width (if is not set @menia query haven't a min-width limit)
+*/
+
+$device: d desktop 0 1024,
+         null from-tablet 1023,
+         t tablet 1023 768,
+         null from-mobile 767,
+         m mobile 767 481,
+         m2 mobile2 480;
+
+/*** PADDING & MARGIN ***/
+$padding_limit: 10; // number of padding class element (Es. .p-10-30 is padding: 10px 30px)
+$padding_range: 10; // padding class precision - if 10 padding class go like 10 20 30... if 5 go like 5 10 15 20...
+// padding class generated is $padding_limit * $padding_range
+
+$margin_limit: 10; // number of margin class element (Es. .p-10-30 is margin: 10px 30px)
+$margin_range: 10; // margin class precision - if 10 margin class go like 10 20 30... if 5 go like 5 10 15 20...
+// margin class generated is $margin_limit * $margin_range
+
+
+/** TEXT STYLE */
+$f_family: 'Raleway';
+$f_weight: normal;
+$f_spacing: normal;
+$f_height: normal;
+
+$text_style: h1 $f_family 70px $f_weight $f_spacing $f_height,
+             h2 $f_family 50px $f_weight $f_spacing $f_height,
+             h3 $f_family 30px $f_weight $f_spacing $f_height,
+             h4 $f_family 20px $f_weight $f_spacing $f_height,
+             p $f_family 14px $f_weight $f_spacing $f_height;
+
+$ul_size: 14px;

@@ -1,0 +1,61 @@
+[class^="wrapper_"],
+[class*=" wrapper_"] {
+    
+    width: 100%;
+    margin: 0 auto;
+}
+@for $i from 1 through length($wrapper_width) {
+    .wrapper_#{$i} { max-width: nth($wrapper_width, $i); }
+}
+
+.no-wrap {
+    
+    width: 100%;
+    height: auto;
+}
+
+@each $row in $device {
+    @include device(nth($row, 2)) {
+        @for $i from 1 through ($grid-columns - 1) {
+            @if(nth($row, 1) != null) {
+                .#{nth($row, 1)}-#{$i} {
+                    float: left;
+                    width: (100% / $grid-columns * $i);
+                }
+                .#{nth($row, 1)}-#{$i}r {
+                    float: right;
+                    width: (100% / $grid-columns * $i);
+                }
+            }
+        }
+        @if(nth($row, 1) != null) {
+            .#{nth($row, 1)}-all {
+                float: unset;
+                clear: both;
+                width: 100%;
+            }
+        }
+    }
+}
+
+// PADDING & MARGIN
+
+@for $a from 0 through $padding_limit {
+    @for $b from 0 through $padding_limit {
+        $aa: $a * $padding_range;
+        $bb: $b * $padding_range;
+        .p#{$aa}-#{$bb} {
+            padding: #{$aa}px #{$bb}px;
+            box-sizing: border-box;
+        }
+    }
+}
+
+@for $a from 0 through $margin_limit {
+    $aa: $a * $margin_range;
+    @for $b from 0 through $margin_limit {
+        $bb: $b * $margin_range;
+        .m#{$aa}-#{$bb} { margin: #{$aa}px #{$bb}px; }
+    }
+    .m#{$aa}-auto { margin: #{$aa}px auto; }
+}

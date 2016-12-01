@@ -1,0 +1,136 @@
+input { 
+    
+    outline: none;
+    &.light {
+            
+        background-color: transparent;
+        border-bottom: 3px solid $l_blue !important;
+        @include prefix(transition, all 0.4s ease-in-out);
+    }
+    &.light_alt {
+        
+        background-color: transparent;
+        border-bottom: 3px solid $white !important;
+        @include prefix(transition, all 0.4s ease-in-out);
+    }
+}
+
+input[type="search"] {
+    
+    padding: 0px 6px;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    
+    border: 0px none;
+    @extend .p10-20;
+    font-size: 18px;
+}
+
+.select_wrap {
+    
+    position: relative;
+    .curr_val {
+        
+        border-bottom: dotted 3px $l_blue;
+        cursor: pointer;
+    }
+    input:nth-of-type(1):checked ~ .custom_select {
+        
+        z-index: 100;
+        opacity: 1;
+    }
+    .custom_select {
+
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        opacity: 0;
+        background-color: $white;
+        text-align: center;
+        @include prefix(transition, all 0.4s ease-in-out);
+        .label {
+            
+            width: 100%;
+            background-color: transparent;
+            padding: 0px;
+            margin: 0px;
+            @include prefix(transition, all 0.2s ease-in-out);
+            color: $text;
+            &:hover, &.select {
+                
+                background-color: $l_blue;
+                padding: 5px 0px;
+                margin: 5px 0px;
+                color: $text_alt;
+                cursor: pointer;
+            }
+        }
+    }
+    @include device(from-tablet) {
+        
+        label.curr_val,
+        custom_select { display: none; }
+        select {
+            
+            display: block;
+            border: 0px;
+            border-bottom: dotted 3px $l_blue;
+            color: $text;
+            @include prefix(appearance, none);
+            font-size: 50px;
+            font-weight: bold;
+        }
+        select.button {
+            
+            background-color: $l_blue;
+            border-bottom: 0px;
+            color: $white;
+            font-size: 20px;
+            font-weight: normal;
+        }
+    }
+}
+
+select {
+    
+    &.light {
+        
+        color: $text;
+        background-color: transparent;
+        padding: 10px 20px;
+        border-style: solid;
+        border-color: $text;
+        border-width: 0px 0px 3px;
+        font-size: 18px;
+    }
+    &.light_alt {
+        
+        background-color: transparent;
+        padding: 10px 20px;
+        border-style: solid;
+        border-color: $white;
+        border-width: 0px 0px 3px;
+        font-size: 18px;
+    }
+}
+
+.alert {
+    
+    padding: 20px;
+    border: dotted 3px;
+    &.error { border-color: $error; }
+    &.success { border-color: $success; }
+}
+
+// Date Picker
+.dd-w-c {
+    
+    .dd-b { @include prefix(transform-origin, center center); }
+    .dd-m, .dd-y { padding: 13px 0px; }
+    .dd-d { padding: 5px 0px; }
+}

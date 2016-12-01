@@ -1,0 +1,14 @@
+@import '../global/variables';
+@import '../global/mixin';
+
+img.alignleft {
+    
+    float: left;
+    margin-right: 10px;
+}
+
+img.alignright {
+    
+    float: right;
+    margin-left: 10px;
+}

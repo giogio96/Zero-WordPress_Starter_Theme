@@ -1,0 +1,50 @@
+@each $row in $text_style {
+    #{nth($row, 1)} {
+        @if(nth($row, 2) != $f_family) { font-family: #{nth($row, 2)}; }
+        font-size: #{nth($row, 3)};
+        @if(nth($row, 3) != normal) { font-weight: #{nth($row, 4)} }
+        @if(nth($row, 4) != normal) { letter-spacing: #{nth($row, 5)} }
+        @if(nth($row, 5) != normal) { line-height: #{nth($row, 6)} }
+        @extend .no_m;
+    }
+}
+
+.title { text-transform: capitalize; }
+
+@include device(from-mobile) {
+    
+    h1 { font-size: 50px; }
+    h2 { font-size: 30px; }
+    h3 { font-size: 18px; }
+    h4 { font-size: 15px; }
+}
+ul {
+
+    font-size: $ul_size;
+    line-height: 25px;
+    padding-left: 20px;
+    li { margin: 0px 0px; }
+}
+
+a {
+
+    color: $link;
+    text-decoration: none;
+    @include prefix(transition, all 0.4s ease-in-out);
+    &.hover {
+        color: $text_alt;
+        &:hover { color: $link; }
+    }
+}
+
+body {
+
+    @extend .no_m;
+    background-color: $body;
+    overflow-x: hidden;
+    font-family: $f_family;
+    @extend p;
+    @if($f_weight != normal) { font-weight: $f_weight; }
+}
+
+a.excerpt-read-more { display: none; }

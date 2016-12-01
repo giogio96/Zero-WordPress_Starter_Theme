@@ -1,0 +1,49 @@
+/*
+ * GLOBAL SASS Stylesheet
+ */
+
+// Import Variabili e Mixin
+@import 'global/variables';
+@import 'global/mixin';
+
+// Import the Global Class
+@import 'global/global';
+
+// Import the Grid System
+@import 'global/grid';
+
+// Import the Text Style
+@import 'global/typography';
+
+/*
+ * COMPONENTS SASS Stylesheet
+ */
+
+// Importing Button Style
+@import 'components/buttons';
+
+// Importing FieldSet Style (Input, textarea, etc...)
+@import 'components/fields';
+
+/*
+ * MODULES SASS Stylesheet
+ */
+
+// Import Header Style
+@import 'modules/header';
+
+// Import Menu Style
+@import 'modules/menu';
+
+// Import Navigation Style
+@import 'modules/navigation';
+
+// Import Footer Style
+@import 'modules/footer';
+
+// Import Sidebar Style
+@import 'modules/sidebar';
+
+/*
+ * TEMPLATES SASS Stylesheet
+ */

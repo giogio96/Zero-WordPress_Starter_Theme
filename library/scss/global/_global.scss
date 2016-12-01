@@ -1,0 +1,66 @@
+.uc { text-transform: uppercase; }
+.c_alt { color: $text_alt; }
+.t_center { text-align: center; }
+
+$list: $color_attr_1, $color_attr_2;
+$count: 0;
+@each $i in color_attr_1, color_attr_2 {
+    $count: $count + 1;
+    .c_#{$i} { color: nth($list, $count); }
+    .bg_#{$i} { background-color: nth($list, $count); }
+}
+
+.no_m { margin: 0px; }
+.no_p { padding: 0px; }
+
+.left { float: left; }
+.right { float: right; }
+.clear { clear: both; }
+
+.h_align {
+    
+    @include relative(left 50%);
+    @include prefix(transform, translateX(-50%));
+}
+
+.v_align {
+    
+    @include relative(top 50%);
+    @include prefix(transform, translateY(-50%));
+}
+
+.center {
+    
+    @include relative(top 50% left 50%);
+    @include prefix(transform, translate(-50%,-50%));
+}
+
+.block { display: inline-block; }
+
+.no_link {
+    
+    text-decoration: none;
+    color: inherit;
+}
+
+.no_list { list-style: none; }
+
+.full {
+    
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    
+    max-width: 100%;
+    height: auto;
+}
+
+.hidden { display: none; }
+
+.cover {
+    
+    @include absolute(top left);
+    @extend .full;
+}

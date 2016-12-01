@@ -1,0 +1,25 @@
+{
+  "name": "zero",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Giovanni Ganzerli",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://giovanni-ganzerli@bitbucket.org/giovanni-ganzerli/wp-starter-theme.git"
+  },
+  "homepage": "",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-svg-to-css": "^1.1.15",
+    "gulp-uglifyjs": "^0.6.2",
+    "sequence": "^3.0.0"
+  },
+  "description": ""
+}
