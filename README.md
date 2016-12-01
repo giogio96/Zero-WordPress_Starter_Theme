@@ -159,3 +159,5 @@ In order to add your website into your smartphone home and view it Fullscreen an
 - favicon.png & favicon.ico (/) 500px*500px ~ WebSite Icon
 ```
 
+**************************************************************
+### And now...you have to start from Zero!
