@@ -27,6 +27,7 @@ Zero is a Plugin-Ready Starter Theme becouse give you some usefull plugins that 
 * Duplicate Post
 * Members
 * CodePress Admin Column
+* All In One WP Security & Firewall 
 * ...
 
 # Installation
