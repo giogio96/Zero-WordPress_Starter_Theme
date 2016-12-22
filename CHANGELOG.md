@@ -21,6 +21,10 @@ I have thing Zero in order to be easy, customizable and superfast! This is all t
 
 NB: I have lost track before the 2.0 version :_(
 
+/* 2.8.5 Update */
+
+* Add Analytics Spam Blocker for prevent fake traffic on your website
+
 /* 2.8 Update */
 
 * Add All In One WP Security & Firewall plugin
