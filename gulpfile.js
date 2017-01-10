@@ -15,9 +15,9 @@ var scssOptions = {
 
 gulp.task('scssMain', function () {
 
-    return gulp.src('library/scss/main.scss')
+    return gulp.src('library/scss/*.scss')
         .pipe(sass(scssOptions))
-        .pipe(gulp.dest('library/scss/'));
+        .pipe(gulp.dest('library/css/'));
 });
 
 gulp.task('scssTemplates', function () {
@@ -36,7 +36,7 @@ gulp.task('svg-to-css', function() {
 
 gulp.task('jsMain', function() {
     
-    return gulp.src('library/js/gloabal.js')
+    return gulp.src('library/js/global.js')
         .pipe(uglify())
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('library/js/min/'));

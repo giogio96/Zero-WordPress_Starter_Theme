@@ -209,6 +209,12 @@ function bones_scripts_and_styles() {
 	}
 }
 
+function load_custom_wp_admin_style() {
+        wp_register_style( 'wp_admin-css', get_template_directory_uri() . '/library/css/wp_admin.css', false, '1.0.0' );
+        wp_enqueue_style( 'wp_admin-css' );
+}
+add_action( 'admin_enqueue_scripts', 'load_custom_wp_admin_style' );
+
 /*********************
 THEME SUPPORT
 *********************/

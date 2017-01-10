@@ -21,6 +21,10 @@ I have thing Zero in order to be easy, customizable and superfast! This is all t
 
 NB: I have lost track before the 2.0 version :_(
 
+/* 3.0 Update */
+
+* Implement custom SCSS stylesheet for WP Admin
+
 /* 2.9 Update */
 
 * Fix little gulp & scss bugs
