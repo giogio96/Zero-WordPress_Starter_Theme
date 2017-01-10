@@ -17,7 +17,7 @@ gulp.task('scssMain', function () {
 
     return gulp.src('library/scss/main.scss')
         .pipe(sass(scssOptions))
-        .pipe(gulp.dest(scssMainDest));
+        .pipe(gulp.dest('library/scss/'));
 });
 
 gulp.task('scssTemplates', function () {
@@ -57,7 +57,3 @@ gulp.task('default', ['scssMain', 'scssTemplates', 'jsMain', 'jsTemplates', 'svg
     gulp.watch('library/js/**/*.js', ['jsMain', 'jsTemplates']);
     gulp.watch('library/svg/**/*.svg', ['svg-to-css']);
 });
-
-gulp.task('localtunnel', shell.task([
-    "lt --port 80 -s mysubdomain";
-]));

@@ -2,7 +2,8 @@ button.button,
 input[type="submit"] {
     
     @extend .p10-20;
-    background-color: $l_blue;
+    background-color: $link;
+    color: $white;
     font-size: 17px;
     @extend .c_alt;
     border: 0px;
@@ -11,16 +12,16 @@ input[type="submit"] {
     &:hover {
         
         background-color: $white;
-        color: $l_blue;
+        color: $link;
     }
     &.alt {
         
         background-color: $white;
-        color: $l_blue;
+        color: $link;
         @include prefix(transition, all 0.3s ease-in-out);
         &:hover {
         
-            background-color: $l_blue;
+            background-color: $link;
             color: $white;
         }
     }
@@ -56,7 +57,7 @@ hr {
 input:checked + .label_selector, 
 .label_selector:hover {
             
-    background-color: $l_blue;
+    background-color: $link;
     a { color: $white; }
 }
 
