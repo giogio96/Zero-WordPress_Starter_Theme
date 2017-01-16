@@ -196,7 +196,6 @@ function bones_scripts_and_styles() {
       wp_enqueue_script( 'addtohome-js' );
       wp_enqueue_script( 'custom-scrollbar-js' );
       if(is_archive()) {
-
           wp_enqueue_script( 'archive-js' );
       } elseif(is_single()) {
 

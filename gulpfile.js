@@ -2,9 +2,7 @@
 
 var gulp        = require('gulp');
 var sass        = require('gulp-sass');
-var uglify      = require('gulp-uglifyjs');
-var concat      = require('gulp-concat');
-var rename      = require('gulp-rename');
+var minify      = require('gulp-minify');
 var svgToSss    = require('gulp-svg-to-css');
 
 
@@ -37,16 +35,26 @@ gulp.task('svg-to-css', function() {
 gulp.task('jsMain', function() {
     
     return gulp.src('library/js/global.js')
-        .pipe(uglify())
-        .pipe(rename({ suffix: '.min' }))
+        .pipe(minify({
+            ext:{
+                src:'.js',
+                min:'.min.js'
+            },
+            noSource: true
+        }))
         .pipe(gulp.dest('library/js/min/'));
 });
 
 gulp.task('jsTemplates', function() {
     
     return gulp.src('library/js/templates/*.js')
-        .pipe(uglify())
-        .pipe(rename({ suffix: '.min' }))
+        .pipe(minify({
+            ext:{
+                src:'.js',
+                min:'.min.js'
+            },
+            noSource: true
+        }))
         .pipe(gulp.dest('library/js/min/templates/'));
 });
 
