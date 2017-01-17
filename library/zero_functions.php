@@ -120,7 +120,7 @@ function bones_scripts_and_styles() {
       $template = explode('.', $template);
       $template_name = $template[count($template)-2];
       $template_url = '/library/css/templates/'.$template_name.'.css';
-      $scrit_url = '/library/js/min/templates/'.$template_name.'.min.js';
+      $script_url = '/library/js/min/templates/'.$template_name.'.min.js';
       
       // register main stylesheet
       wp_register_style( 'main', get_stylesheet_directory_uri() . '/library/css/main.css', array(), '', 'all' );
