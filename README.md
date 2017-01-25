@@ -29,6 +29,7 @@ Zero is a Plugin-Ready Starter Theme becouse give you some usefull plugins that 
 * CodePress Admin Column
 * All In One WP Security & Firewall 
 * Analytics Spam Blocker
+* Offline Content by Mozilla
 * ...
 
 # Installation
@@ -140,7 +141,9 @@ Zero use SvgToScss for provide special classes that help you to insert svg icon 
 
 ## Cool Features
 
-Zero is "Progressive" Template Ready, you have to set up some parameters and it is ready to work into your smartphone such as an App.
+Zero is Progressive Template Ready, you have to set up some parameters and it is ready to work into your smartphone such as an App. From the version 4.0 Zero implement Manifest & Services Worker support working also offline (Features at the moment available only for android devices using chrome browser)
+
+N.B: For the offline functionality you need a HTTPS protocol [look here](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers)
 
 #### Header.php
 
@@ -160,6 +163,14 @@ In order to add your website into your smartphone home and view it Fullscreen an
 - win8-tile-icon-57.png (/library/images/) 57px*57px ~ WebApp Home Icon 57px
 - favicon.png & favicon.ico (/) 500px*500px ~ WebSite Icon
 ```
+
+**************************************************************
+
+## What about the 4.0 Version
+
+From the 4.0 Version, Zero implement a full support to PWA (Progresive Web App), you have only to customize your manifest.json file inside the template and activate the "Offline Content" plugin developed by Mozilla in order to display yor content also when your browser is offline!
+
+Try yourself for see the real magic!
 
 **************************************************************
 ### And now...you have to start from Zero!

@@ -21,6 +21,10 @@ I have thing Zero in order to be easy, customizable and superfast! This is all t
 
 NB: I have lost track before the 2.0 version :_(
 
+/* 4.0 Update */
+
+* Add Service Worker + Manifest Support for a complete PWA mode working also offline
+
 /* 3.5 Update */
 
 * JS File based on WordPress Post Type
