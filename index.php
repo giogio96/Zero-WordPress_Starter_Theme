@@ -7,9 +7,7 @@ else
 
 $loop = 'post';
 
-get_header(); 
-
-page_header(get_the_title(), 'http://trendycounty.com/media/wysiwyg/internal-about-us.jpg'); ?>
+get_header(); ?>
 
 <div class="wrapper_2 p100-10">
     <?php

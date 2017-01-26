@@ -16,7 +16,7 @@
     "gulp": "^3.9.1",
     "gulp-minify": "0.0.14",
     "gulp-sass": "^2.3.2",
-    "gulp-svg-to-css": "^1.1.15",
+    "gulp-svg-to-css": "^1.1.15"
   },
   "description": ""
 }
