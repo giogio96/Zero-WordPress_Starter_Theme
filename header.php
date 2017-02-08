@@ -16,24 +16,35 @@
 		<?php // mobile meta (hooray!) ?>
 		<meta name="HandheldFriendly" content="True">
 		<meta name="MobileOptimized" content="320">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
        
         <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
         
-        <link rel="apple-touch-startup-image" href="<?php echo get_template_directory_uri(); ?>/library/images/startup.png">
+        <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/icons/icon-144.png">
         
-		<?php // icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) ?>
-		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/icon-129.png">
+        <link rel="apple-touch-startup-image" href="<?php echo get_template_directory_uri(); ?>/library/images/lancher/startup.png">
+        
+		<!-- APP ICON -->
+		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/icons/icon-129.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="<?php echo get_template_directory_uri(); ?>/library/images/icons/icon-152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/library/images/icons/icon-180.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="<?php echo get_template_directory_uri(); ?>/library/images/icons/icon-167.png">
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?php echo get_template_directory_uri(); ?>/library/images/icons/icon-57.png" />
+		
+		
+		<!-- FAVICONS -->
 		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
-		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?php echo get_template_directory_uri(); ?>/library/images/icon-57.png" />
 		<!--[if IE]>
-			<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
+		    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 		<![endif]-->
-		<?php // or, set /favicon.ico for IE10 win ?>
-		<meta name="msapplication-TileColor" content="#000">
-		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/icon-144.png">
-        <meta name="theme-color" content="#000">
+		
+		<!-- WEBAPP TEXT -->
+           
+        <!-- WEBAPP COLORS -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="#333">
+        <meta name="msapplication-TileColor" content="#333">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#333">
+        <meta name="theme-color" content="#333">
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 		<!-- Icon Font -->
