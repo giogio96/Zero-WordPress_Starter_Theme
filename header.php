@@ -39,6 +39,7 @@
 		<![endif]-->
 		
 		<!-- WEBAPP TEXT -->
+        <meta name="apple-mobile-web-app-title" content="Zero Starter Theme">
            
         <!-- WEBAPP COLORS -->
         <meta name="apple-mobile-web-app-status-bar-style" content="#333">
