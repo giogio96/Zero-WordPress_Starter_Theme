@@ -57,15 +57,9 @@ $margin_range: 10; // margin class precision - if 10 margin class go like 10 20 
 
 
 /** TEXT STYLE */
-$f_family: 'Raleway';
-$f_weight: normal;
-$f_spacing: normal;
-$f_height: normal;
+$f_family: 'Raleway', sans-serif;
+$f_family_alt: 'Your Custom Font Family Alt', cursive;
 
-$text_style: h1 $f_family 70px $f_weight $f_spacing $f_height,
-             h2 $f_family 50px $f_weight $f_spacing $f_height,
-             h3 $f_family 30px $f_weight $f_spacing $f_height,
-             h4 $f_family 20px $f_weight $f_spacing $f_height,
-             p $f_family 14px $f_weight $f_spacing $f_height;
+$text_style: h1 51px, h2 31px, h3 30px, h4 20px, h5 18px, p 12px;
 
 $ul_size: 14px;
