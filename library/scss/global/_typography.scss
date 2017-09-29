@@ -1,11 +1,12 @@
 @each $row in $text_style {
     #{nth($row, 1)} {
-        @if(nth($row, 2) != $f_family) { font-family: #{nth($row, 2)}; }
-        font-size: #{nth($row, 3)};
-        @if(nth($row, 3) != normal) { font-weight: #{nth($row, 4)} }
-        @if(nth($row, 4) != normal) { letter-spacing: #{nth($row, 5)} }
-        @if(nth($row, 5) != normal) { line-height: #{nth($row, 6)} }
-        @extend .no_m;
+        font-family: $f_family;
+        font-size: #{nth($row, 2)};
+        margin: 0px 0px 5px;
+        color: $text;
+        &.alt {
+            font-family: $f_family_alt;
+        }
     }
 }
 
