@@ -37,9 +37,11 @@ $wrapper_width: 1000px 1200px; // Custom Wrapper width (.wrapper_1 is 800px .wra
  * 1024 - Device Screen min-width (if is not set @menia query haven't a min-width limit)
 */
 
-$device: d desktop 0 1024,
-         null from-tablet 1023,
-         t tablet 1023 768,
+$device: d desktop 0 1025,
+         null from-tablet 1024,
+         null from-tablet-small 940,
+         null from-tablet-portrait 940,
+         t tablet 1024 768,
          null from-mobile 767,
          m mobile 767 481,
          m2 mobile2 480;
